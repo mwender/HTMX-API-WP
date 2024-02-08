@@ -241,11 +241,6 @@ class HXWP_Render
 	protected function get_theme_path()
 	{
 		$theme_path = trailingslashit(get_stylesheet_directory());
-
-		if (is_child_theme()) {
-			$theme_path = trailingslashit(get_template_directory());
-		}
-
 		return $theme_path;
 	}
 
